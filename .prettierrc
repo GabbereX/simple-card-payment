@@ -1,0 +1,11 @@
+{
+  "trailingComma": "es5",
+  "formatOnSave": true,
+  "formatOnPaste": true,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "arrowParens": "avoid",
+  "printWidth": 80
+}

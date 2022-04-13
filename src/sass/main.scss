@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), local('MontserratRegular'),
+    local('Montserrat-Regular'), local('Montserrat Regular'),
+    url('../assets/fonts/montserrat-regular.woff2') format('woff2'),
+    url('../assets/fonts/montserrat-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('MontserratSemiBold'), local('Montserrat-SemiBold'),
+    local('Montserrat SemiBold'),
+    url('../assets/fonts/montserrat-semibold.woff2') format('woff2'),
+    url('../assets/fonts/montserrat-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('MontserratBold'), local('Montserrat-Bold'),
+    local('Montserrat Bold'),
+    url('../assets/fonts/montserrat-bold.woff2') format('woff2'),
+    url('../assets/fonts/montserrat-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('MontserratExtraBold'), local('Montserrat-ExtraBold'),
+    local('Montserrat ExtraBold'),
+    url('../assets/fonts/montserrat-extrabold.woff2') format('woff2'),
+    url('../assets/fonts/montserrat-extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif, Arial, Helvetica;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-wrap > label {
+  margin-left: 2px;
+  margin-bottom: 2px;
+  font-size: 11px;
+  color: rgb(71, 71, 71);
+  cursor: pointer;
+}
+
+.input {
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  font-family: inherit;
+  border: 1px solid rgb(110, 110, 110);
+  border-radius: 10px;
+  outline: none;
+}
+
+#cartNumber {
+  padding-right: 40px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: white;
+  background: rgb(0, 46, 145);
+  border: 1px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #000;
+}
+
+.btn:disabled {
+  background: #666;
+  cursor: no-drop;
+}
+
+.validation-error {
+  position: relative;
+  top: -10px;
+  font-size: 10px;
+  color: red;
+  text-align: right;
+}
+
+#card-icon {
+  position: absolute;
+  width: 32px;
+  height: 21px;
+  right: 10px;
+  top: 18px;
+}
